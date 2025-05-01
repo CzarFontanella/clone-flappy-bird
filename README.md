@@ -2,6 +2,8 @@
 
 Este projeto é uma implementação do jogo **Flappy Bird** utilizando **HTML** e **JavaScript**. O objetivo do jogo é controlar um pássaro para evitar obstáculos (canos) e sobreviver o máximo de tempo possível enquanto coleta pontos.
 
+O projeto pode ser acessado em: https://czarfontanella.github.io/clone-flappy-bird/
+
 ## Funcionalidades
 
 - **Movimento do pássaro:** O pássaro sobe ao pressionar qualquer tecla e cai devido à gravidade quando não é controlado.
