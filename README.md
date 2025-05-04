@@ -1,14 +1,15 @@
 # Jogo Flappy Bird - Versão em JavaScript
 
-Este projeto é uma implementação do jogo **Flappy Bird** utilizando **HTML** e **JavaScript**. O objetivo do jogo é controlar um pássaro para evitar obstáculos (canos) e sobreviver o máximo de tempo possível enquanto coleta pontos.
+Este projeto é uma implementação do jogo **Flappy Bird** utilizando **HTML**, **JavaScript** e **Canvas API**. O objetivo do jogo é controlar um pássaro para evitar obstáculos (canos) e sobreviver o máximo de tempo possível enquanto coleta pontos.
 
-O projeto pode ser acessado em: https://czarfontanella.github.io/clone-flappy-bird/
+Acesse o jogo aqui: https://czarfontanella.github.io/clone-flappy-bird/
 
 ## Funcionalidades
-
-- **Movimento do pássaro:** O pássaro sobe ao pressionar qualquer tecla e cai devido à gravidade quando não é controlado.
-- **Obstáculos (canos):** Os canos se movem da direita para a esquerda da tela e têm uma altura aleatória. O jogador deve passar entre eles sem colidir.
-- **Pontuação:** A cada vez que o pássaro passa entre dois canos, o jogador ganha 1 ponto. A pontuação é exibida na tela.
+- **Canvas responsivo:** Adaptação automática da resolução para qualquer tamanho de tela, com razão 9:16.
+- **Movimento realista do pássaro:** Pulo suave com gravidade, velocidade máxima de queda e rotação animada.
+- **Obstáculos (canos):** Os canos se movem da direita para a esquerda da tela e têm uma altura aleatória.
+- **Detecção de colisão precisa:** Baseada em "bounding boxes" ajustadas com margens.
+- **Pontuação:** A cada vez que o pássaro passa entre dois canos, o jogador ganha 1 ponto. A pontuação é exibida na tela em tempo real.
 - **Colisão:** O jogo termina quando o pássaro colide com um cano ou com o chão.
 - **Tela de Game Over:** Quando o jogo termina, uma tela de "Game Over" é exibida, juntamente com a pontuação final e um botão para reiniciar o jogo.
 
@@ -24,7 +25,6 @@ O projeto pode ser acessado em: https://czarfontanella.github.io/clone-flappy-bi
 A estrutura do projeto é simples e contém os seguintes arquivos:
 
 - **index.html**: O arquivo HTML que contém a estrutura básica do jogo.
-- **style.css**: O arquivo CSS para estilização (se necessário para a página).
 - **script.js**: O arquivo JavaScript que contém toda a lógica do jogo, incluindo a movimentação do pássaro, a criação e movimentação dos canos, e a detecção de colisões.
 - **images/**: Pasta contendo as imagens necessárias para o jogo, como o pássaro, o fundo, os canos e o chão.
 - **sounds/**: Pasta contendo os arquivos de som, como o som de voo, colisão e pontuação.
@@ -40,6 +40,8 @@ A estrutura do projeto é simples e contém os seguintes arquivos:
 
 ### 1. **Manipulação do Canvas:**
    - Aprendi como usar a API do Canvas do HTML5 para desenhar imagens, formas e texto de forma dinâmica no navegador. Isso inclui como manipular o contexto do canvas para criar animações e interações visuais.
+   - Aplicação da razão de aspecto 9:16 para adaptação em diferentes telas.
+   - Através do `getBoundingClientRect()`, aprendi como posicionar elementos (como o botão) com base no canvas renderizado.
 
 ### 2. **Controle de Animações:**
    - Através do `requestAnimationFrame()`, aprendi como criar loops de animação eficientes e sincronizados com a taxa de atualização do navegador, o que torna o jogo mais fluido e melhora o desempenho.
@@ -65,3 +67,5 @@ A estrutura do projeto é simples e contém os seguintes arquivos:
 ## Conclusão
 
 Este projeto foi uma ótima maneira de aprender sobre como desenvolver um jogo simples usando **JavaScript** e a **Canvas API**. Durante o desenvolvimento, consegui adquirir uma compreensão sólida de como funciona a lógica básica de um jogo, além de aprender sobre animações, interatividade, e como lidar com eventos de usuário em tempo real.
+
+Conecte-se comigo no LinkedIn: https://www.linkedin.com/in/cesar-fontanella/
